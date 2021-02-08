@@ -19,5 +19,26 @@ namespace RobotsVSDinosaurs
 
         // member methods (CAN DO)
 
+        public void DinosaurAttack()
+        {
+
+        }
+
+        public void DinosaurLosingHealth(int robotAttackPower, int dinosaurAttackPower)
+        {
+            if (robotAttackPower > dinosaurAttackPower)
+            {
+                Console.WriteLine("Dinosaur loses health points");
+                
+            }
+            else if (dinosaurAttackPower > robotAttackPower)
+                {
+                Console.WriteLine("Robot loses health points");
+            }
+
+            else 
+            {
+                Console.WriteLine("The battle was a draw!");
+            }
     }
 }

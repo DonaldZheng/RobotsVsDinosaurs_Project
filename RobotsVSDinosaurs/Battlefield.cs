@@ -11,6 +11,13 @@ namespace RobotsVSDinosaurs
         // member variables (HAS A) 
 
         // constructors (SPAWNER)
+            Robot robotOne = new Robot();
+            Robot robotTwo = new Robot();
+            Robot robotThree = new Robot();
+
+            Dinosaur dinosaurOne = new Dinosaur();
+            Dinosaur dinosaurTwo = new Dinosaur();
+            Dinosaur dinosaurThree = new Dinosaur();
 
         // member methods (CAN DO)
 
