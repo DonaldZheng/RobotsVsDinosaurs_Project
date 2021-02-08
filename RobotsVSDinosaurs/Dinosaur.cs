@@ -6,17 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsVSDinosaurs
 {
-    class Robot
+    class Dinosaur
     {
-        // member variables (HAS A) 
-
-
-        // constructors (SPAWNER)
-        
-
-        // member methods (CAN DO)
-
-
-
     }
 }
