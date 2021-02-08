@@ -11,15 +11,32 @@ namespace RobotsVSDinosaurs
         // member variables (HAS A) 
 
         // constructors (SPAWNER)
-            Robot robotOne = new Robot();
-            Robot robotTwo = new Robot();
-            Robot robotThree = new Robot();
+           
 
-            Dinosaur dinosaurOne = new Dinosaur();
-            Dinosaur dinosaurTwo = new Dinosaur();
-            Dinosaur dinosaurThree = new Dinosaur();
 
         // member methods (CAN DO)
 
+
+        
+
+          
+
+        public void DisplayWinner()
+       { 
+            if (dinosaurOne <= 0 && dinosaurTwo <= 0 && dinosaurThree <=0)
+            {
+                Console.WriteLine("Robots Wins");
+            }        
+            else if (robotOne<= 0 && robotTwo <= 0 && robotThree <=0) 
+            {
+                Console.WriteLine( "Dinosaur Wins");
+            }
+            else 
+            {
+                Console.WriteLine("Winner has not been determined yet");
+            }
+                    
+        }
+        
     }
 }
