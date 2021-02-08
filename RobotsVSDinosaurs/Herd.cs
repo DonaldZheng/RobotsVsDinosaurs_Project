@@ -8,5 +8,12 @@ namespace RobotsVSDinosaurs
 {
     class Herd
     {
+        // member variables (HAS A) 
+        List<Dinosaur> dinosaurObjects;
+
+        // constructors (SPAWNER)
+
+        // member methods (CAN DO)
+
     }
 }

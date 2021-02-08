@@ -8,5 +8,11 @@ namespace RobotsVSDinosaurs
 {
     class Battlefield
     {
+        // member variables (HAS A) 
+
+        // constructors (SPAWNER)
+
+        // member methods (CAN DO)
+
     }
 }

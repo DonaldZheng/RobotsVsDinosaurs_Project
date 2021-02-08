@@ -8,5 +8,12 @@ namespace RobotsVSDinosaurs
 {
     class Fleet
     {
+        // member variables (HAS A) 
+        List<Robot> robotObjects;
+
+        // constructors (SPAWNER)
+
+        // member methods (CAN DO)
+
     }
 }

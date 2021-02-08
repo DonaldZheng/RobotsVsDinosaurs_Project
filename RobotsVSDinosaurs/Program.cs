@@ -10,6 +10,16 @@ namespace RobotsVSDinosaurs
     {
         static void Main(string[] args)
         {
+            Robot robotOne = new Robot();
+            Robot robotTwo = new Robot();
+            Robot robotThree = new Robot();
+
+            Dinosaur dinosaurOne = new Dinosaur();
+            Dinosaur dinosaurTwo = new Dinosaur();
+            Dinosaur dinosaurThree = new Dinosaur();
+
+
+
         }
     }
 }
