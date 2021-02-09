@@ -9,6 +9,9 @@ namespace RobotsVSDinosaurs
     class Battlefield
     {
         // member variables (HAS A) 
+        // has a fleet and a herd!
+        List<Fleet>RobotFleet;
+        List<Herd>DinosuarFleet;
 
         // constructors (SPAWNER)
            
@@ -16,27 +19,50 @@ namespace RobotsVSDinosaurs
 
         // member methods (CAN DO)
 
-
+        // Orchestrate your game logic
+        // your dinosaurs will attack robots and robots will attack dinosaurs
+        // the game will end when?
         
-
+        //if (
+             )
+            {
+                Console.WriteLine("Dinosaur successfully attacked Robot");
+                return robotHealth;
+            }
+               else if (robot.robotHealth > 0)
+            {
+                Console.WriteLine("Dinosaur needs to attack again");
+                DinosaurAttack(robot);
+            }
+               else (robot.robotHealth <= 0);
+            {
+                Console.WriteLine("Robot is dead" );
+            }
           
 
-        public void DisplayWinner()
-       { 
-            if (dinosaurOne <= 0 && dinosaurTwo <= 0 && dinosaurThree <=0)
+        public void DisplayWinner(Herd herd, Fleet fleet)
+        {    
+            for (i = 0; i < herd.Length; i++)
             {
-                Console.WriteLine("Robots Wins");
-            }        
-            else if (robotOne<= 0 && robotTwo <= 0 && robotThree <=0) 
-            {
-                Console.WriteLine( "Dinosaur Wins");
+                if (herd[i].health > 0 )
+                {
+                    Console.WriteLine("Herd is not dead");
+                    break;
+
+                }
             }
-            else 
-            {
-                Console.WriteLine("Winner has not been determined yet");
-            }
-                    
-        }
+            
+            
         
-    }
+        }
+
+        public void RunGame()
+        {
+            
+    
+        }
+
+        
+
+        
 }

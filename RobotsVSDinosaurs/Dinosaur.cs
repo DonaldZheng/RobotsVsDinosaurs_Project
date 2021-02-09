@@ -19,15 +19,18 @@ namespace RobotsVSDinosaurs
         public Dinosaur (string dinosaurType, double dinosaurHealth, double dinosaurEnergy, double dinosaurAttackPower)
 	{
             this.dinosaurType = dinosaurType;
-            this.dinosaurHealth = dinosaurHealth;
+            dinosaurHealth = 100;
             this.dinosaurEnergy = dinosaurEnergy;
             this.dinosaurAttackPower = dinosaurAttackPower;
 	}
         // member methods (CAN DO)
 
-        public void DinosaurAttack(Robot robot)
+        public double DinosaurAttack(Robot robot)
         {
-          
+
+            robot.robotHealth = robot.robotHealth - this.dinosaurAttackPower
+               
+              
         }
 
   
