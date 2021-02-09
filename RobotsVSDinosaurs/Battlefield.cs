@@ -47,9 +47,12 @@ namespace RobotsVSDinosaurs
                     Console.WriteLine("Dinosaur won!");
                     dinosaurScore++;
 
+                    DisplayWinner();
                     // end the battle 
 
                 }
+                    Console.ReadLine();
+
             }
 
             for (int i = 0; i < fleet.robotObjects.Count; i++)
@@ -63,7 +66,11 @@ namespace RobotsVSDinosaurs
                 else if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
                 {
                     Console.WriteLine("Robot Won!");
+
+                    DisplayWinner();
+                    
                 }
+                    Console.ReadLine(); 
             }
 
         }
@@ -73,12 +80,12 @@ namespace RobotsVSDinosaurs
             if (dinosaurScore == 3)
 
             {
-                Console.WriteLine("Dinosaurs' Wins!");
+                Console.WriteLine("Dinosaurs are the winner!!!");
             }
 
             else if (robotsScore == 3)
             {
-                Console.WriteLine("Robots' Wins!");
+                Console.WriteLine("Robots are the winnner!!!");
             }
 
             else
