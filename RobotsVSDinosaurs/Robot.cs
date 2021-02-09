@@ -31,9 +31,5 @@ namespace RobotsVSDinosaurs
         {
             dinosaur.dinosaurHealth = dinosaur.dinosaurHealth - this.robotAttackPower
         }
-
-      
-        }
-
     }
 }

@@ -27,10 +27,7 @@ namespace RobotsVSDinosaurs
 
         public double DinosaurAttack(Robot robot)
         {
-
             robot.robotHealth = robot.robotHealth - this.dinosaurAttackPower
-               
-              
         }
 
   

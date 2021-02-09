@@ -9,7 +9,7 @@ namespace RobotsVSDinosaurs
     class Fleet
     {
         // member variables (HAS A) 
-        List<Robot> robotObjects;
+        public List<Robot> robotObjects;
 
         // constructors (SPAWNER)
            public Fleet ()

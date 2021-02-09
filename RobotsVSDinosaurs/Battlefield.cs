@@ -10,12 +10,20 @@ namespace RobotsVSDinosaurs
     {
         // member variables (HAS A) 
         // has a fleet and a herd!
-        List<Fleet>RobotFleet;
-        List<Herd>DinosuarFleet;
+        public int robotsScore;
+        public int DinosaurScore;
+        public Fleet fleet;
+        public Herd herd;
 
         // constructors (SPAWNER)
-           
+          public Battlefield ()
+	{
+           robotsScore = 0;
+           dinosaurScore = 0;
+           fleet = new Fleet ();
+           herd = new Herd();
 
+	}
 
         // member methods (CAN DO)
 
@@ -23,44 +31,69 @@ namespace RobotsVSDinosaurs
         // your dinosaurs will attack robots and robots will attack dinosaurs
         // the game will end when?
         
-        //if (
-             )
-            {
-                Console.WriteLine("Dinosaur successfully attacked Robot");
-                return robotHealth;
-            }
-               else if (robot.robotHealth > 0)
-            {
-                Console.WriteLine("Dinosaur needs to attack again");
-                DinosaurAttack(robot);
-            }
-               else (robot.robotHealth <= 0);
-            {
-                Console.WriteLine("Robot is dead" );
-            }
+        public double RunGame()
+        {
           
-
-        public void DisplayWinner(Herd herd, Fleet fleet)
-        {    
-            for (i = 0; i < herd.Length; i++)
-            {
-                if (herd[i].health > 0 )
+            for (int i = 0; i < herd.dinosaurObjects.Count; i++)
+			{
+                fleet.robotObjects[i].RobotAttack(herd.dinosaurObjects[i]);
+                if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
                 {
-                    Console.WriteLine("Herd is not dead");
-                    break;
+                    Console.WriteLine("Robot won!");
+                    return robotsScore++;
+                }
+                else if (fleet.robotObjects[i].robotHealth <= 0)
+                {
+                    Console.WriteLine("Dinosaur won!");
+                    return dinosaurScore++;
 
                 }
-            }
+			}
+           
+            for (int i = 0; i < fleet.robotObjects.Count; i++)
+			{
+                herd.dinosaurObjects[0].DinosaurAttack(fleet.robotObjects[0])
+                if (fleet.robotObjects[i].robotHealth <= 0)
+                {
+                    Console.WriteLine("Dinosaur won!");
+                    return dinosaurScore++;
+                }
+                else if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
+                {
+                    Console.WriteLine("Robot Won!");
+                }
+			}
+
+                
+
+            public void DisplayWinner()
+            {
+                if (DinosaurScore == 3)
+                {
+                Console.WriteLine("Dinosaurs' Wins!");
+
+                else if (playerTwoScore == 3)
+            {
+                Console.WriteLine("Robots' Wins!");
+            }    
+                else 
+                {
+                    Console.WriteLine("Winner has not been determined yet");
+                }
+
+                }
+       }
+
+
+        }
             
             
         
         }
 
-        public void RunGame()
-        {
-            
-    
-        }
+
+
+      
 
         
 
