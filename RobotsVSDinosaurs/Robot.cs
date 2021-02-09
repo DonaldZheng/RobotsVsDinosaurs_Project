@@ -19,7 +19,7 @@ namespace RobotsVSDinosaurs
        public Robot (string robotName, double robotHealth, double robotPowerLevel, string robotWeaponType, double robotAttackPower)
 	    {
             this.robotName = robotName;
-            robotHealth = 100;
+            this.robotHealth = robotHealth;
             this.robotPowerLevel = robotPowerLevel;
             this.robotWeaponType = robotWeaponType;
             this.robotAttackPower = robotAttackPower;

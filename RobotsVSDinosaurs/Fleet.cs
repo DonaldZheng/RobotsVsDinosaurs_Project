@@ -16,9 +16,9 @@ namespace RobotsVSDinosaurs
         public Fleet()
         {
             robotObjects = new List<Robot>();
-            Robot robotOne = new Robot("Donald", 100, 100, "Sword", 100);
-            Robot robotTwo = new Robot("John", 100, 100, "Fist", 100);
-            Robot robotThree = new Robot("Andy", 100, 100, "Gun", 100);
+            Robot robotOne = new Robot("Donald", 100, 100, "Sword", 0);
+            Robot robotTwo = new Robot("John", 100, 100, "Fist", 0);
+            Robot robotThree = new Robot("Andy", 100, 100, "Gun", 0);
             robotObjects.Add(robotOne);
             robotObjects.Add(robotTwo);
             robotObjects.Add(robotThree);

@@ -42,25 +42,23 @@ namespace RobotsVSDinosaurs
             // while robotScore OR dinosaurScore is not EQUAL to 3
 
             //while (robotsScore != 3 || dinosaurScore != 3)
-            //{
-            
+            //{     
             //}
-                for (int i = 0; i < herd.dinosaurObjects.Count; i++)
-                {
-                    fleet.robotObjects[i].RobotAttack(herd.dinosaurObjects[i]);
+
+            for (int i = 0; i < herd.dinosaurObjects.Count; i++)
+            {
+                fleet.robotObjects[i].RobotAttack(herd.dinosaurObjects[i]);
+                herd.dinosaurObjects[i].DinosaurAttack(fleet.robotObjects[i]);
                     if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
-                    {
-                        Console.WriteLine("Robot won!");
+                    {                      
                         robotsScore++;
                     }
                     else if (fleet.robotObjects[i].robotHealth <= 0)
                     {
-                        Console.WriteLine("Dinosaur won!");
+                       
                         dinosaurScore++;
-
                         
                         // end the battle 
-
                     }
                         DisplayWinner();
                         Console.ReadLine();
@@ -87,18 +85,6 @@ namespace RobotsVSDinosaurs
             }
 
         }
-
-            public void CheckDinosaurHealth()
-            {
-            
-
-            }
-
-            public void CheckRobotHealth()
-            {
-        
-
-            }
 
 
 

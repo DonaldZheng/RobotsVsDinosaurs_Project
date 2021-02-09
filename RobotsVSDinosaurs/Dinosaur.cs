@@ -19,7 +19,7 @@ namespace RobotsVSDinosaurs
         public Dinosaur (string dinosaurType, double dinosaurHealth, double dinosaurEnergy, double dinosaurAttackPower)
 	{
             this.dinosaurType = dinosaurType;
-            dinosaurHealth = 100;
+            this.dinosaurHealth = dinosaurHealth;
             this.dinosaurEnergy = dinosaurEnergy;
             this.dinosaurAttackPower = dinosaurAttackPower;
 	}
