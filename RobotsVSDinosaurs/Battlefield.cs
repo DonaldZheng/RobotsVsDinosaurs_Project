@@ -34,47 +34,40 @@ namespace RobotsVSDinosaurs
         public void RunGame()
         {
 
-            for (int i = 0; i < herd.dinosaurObjects.Count; i++)
-            {
-                fleet.robotObjects[i].RobotAttack(herd.dinosaurObjects[i]);
-                if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
+            // while herd health is not empty and robot health is not empty, continue playing the game
+            // robot attacks a dinosaur
+            // then a dinosaur attacks
+            // when all dinosaurs OR all robots have empty health, declare the winner
+
+            // while robotScore OR dinosaurScore is not EQUAL to 3
+
+            //while (robotsScore != 3 || dinosaurScore != 3)
+            //{
+            
+            //}
+                for (int i = 0; i < herd.dinosaurObjects.Count; i++)
                 {
-                    Console.WriteLine("Robot won!");
-                    robotsScore++;
+                    fleet.robotObjects[i].RobotAttack(herd.dinosaurObjects[i]);
+                    if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
+                    {
+                        Console.WriteLine("Robot won!");
+                        robotsScore++;
+                    }
+                    else if (fleet.robotObjects[i].robotHealth <= 0)
+                    {
+                        Console.WriteLine("Dinosaur won!");
+                        dinosaurScore++;
+
+                        
+                        // end the battle 
+
+                    }
+                        DisplayWinner();
+                        Console.ReadLine();
+
                 }
-                else if (fleet.robotObjects[i].robotHealth <= 0)
-                {
-                    Console.WriteLine("Dinosaur won!");
-                    dinosaurScore++;
-
-                    DisplayWinner();
-                    // end the battle 
-
-                }
-                    Console.ReadLine();
-
-            }
-
-            for (int i = 0; i < fleet.robotObjects.Count; i++)
-            {
-                herd.dinosaurObjects[0].DinosaurAttack(fleet.robotObjects[0]);
-                if (fleet.robotObjects[i].robotHealth <= 0)
-                {
-                    Console.WriteLine("Dinosaur won!");
-                    dinosaurScore++;
-                }
-                else if (herd.dinosaurObjects[i].dinosaurHealth <= 0)
-                {
-                    Console.WriteLine("Robot Won!");
-
-                    DisplayWinner();
-                    
-                }
-                    Console.ReadLine(); 
-            }
 
         }
-
         public void DisplayWinner()
         {
             if (dinosaurScore == 3)
@@ -95,9 +88,25 @@ namespace RobotsVSDinosaurs
 
         }
 
+            public void CheckDinosaurHealth()
+            {
+            
+
+            }
+
+            public void CheckRobotHealth()
+            {
+        
+
+            }
+
+
+
+        }
+
     }
 
-}   
+
             
 
 
