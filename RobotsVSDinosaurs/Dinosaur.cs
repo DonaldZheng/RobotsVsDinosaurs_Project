@@ -25,9 +25,9 @@ namespace RobotsVSDinosaurs
 	}
         // member methods (CAN DO)
 
-        public double DinosaurAttack(Robot robot)
+        public void DinosaurAttack(Robot robot)
         {
-            robot.robotHealth = robot.robotHealth - this.dinosaurAttackPower
+            robot.robotHealth = robot.robotHealth - this.dinosaurAttackPower;
         }
 
   

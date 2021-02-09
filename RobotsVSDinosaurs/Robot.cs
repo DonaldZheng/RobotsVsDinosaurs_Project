@@ -29,7 +29,7 @@ namespace RobotsVSDinosaurs
 
        public void RobotAttack(Dinosaur dinosaur)
         {
-            dinosaur.dinosaurHealth = dinosaur.dinosaurHealth - this.robotAttackPower
+            dinosaur.dinosaurHealth = dinosaur.dinosaurHealth - this.robotAttackPower;
         }
     }
 }

@@ -11,15 +11,14 @@ namespace RobotsVSDinosaurs
         // member variables (HAS A) 
         public string weaponType;
         public string weaponPower;
-        List<Weapon> = new Weapon;
+        List<Weapon> weapons;
 
         // constructors (SPAWNER)
       public Weapon (string weaponType, string weaponPower)
 	{
         this.weaponType = weaponType;
         this.weaponPower = weaponPower;
-        
-       
+        weapons = new List<Weapon>();   
 
 	}
 

@@ -14,6 +14,7 @@ namespace RobotsVSDinosaurs
         // constructors (SPAWNER)
         public Herd ()
 	    {
+            dinosaurObjects = new List<Dinosaur>();
             Dinosaur dinosaurOne = new Dinosaur("T-Rex", 100, 100, 50);
             Dinosaur dinosaurTwo = new Dinosaur("Raptor", 100, 100, 50);
             Dinosaur dinosaurThree = new Dinosaur("Tall", 100, 100, 50);

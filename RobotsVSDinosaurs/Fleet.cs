@@ -12,15 +12,17 @@ namespace RobotsVSDinosaurs
         public List<Robot> robotObjects;
 
         // constructors (SPAWNER)
-           public Fleet ()
-	       {
-            Robot robotOne = new Robot("Donald", 100, 100, "Sword" 50);
+
+        public Fleet()
+        {
+            robotObjects = new List<Robot>();
+            Robot robotOne = new Robot("Donald", 100, 100, "Sword", 50);
             Robot robotTwo = new Robot("John", 100, 100, "Fist", 50);
-            Robot robotThree = new Robot("Andy" 100, 100, "Gun", 50);
+            Robot robotThree = new Robot("Andy", 100, 100, "Gun", 50);
             robotObjects.Add(robotOne);
             robotObjects.Add(robotTwo);
             robotObjects.Add(robotThree);
-	        }
+        }
 
 
         // member methods (CAN DO)
